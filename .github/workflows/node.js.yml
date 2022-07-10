@@ -29,3 +29,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: "../actionTest.js"
+  
