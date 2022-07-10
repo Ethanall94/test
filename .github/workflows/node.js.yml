@@ -34,5 +34,5 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - run: "./actionTest.js"
+      - run: "test/actionTest.js"
   
